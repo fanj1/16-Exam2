@@ -80,8 +80,7 @@ def problem1(rectangles):
 
     ans = 0
     for k in range(len(rectangles)):
-        rect = rectangles(k)
-        ans = ans + rect.w
+        ans = ans + rectangles[k].w * rectangles[k].h
     return ans
 
 
